@@ -8,6 +8,7 @@ jobs:
     pool:
       vmImage: 'vs2017-win2016'
     steps:
-    - powershell:
-        .\Hello.ps1 -Verbose
-      displayName: "Run"
+    - powershell: |
+        Write-Host 'Step 1' #comment 1
+        Write-Host 'Step 2' #comment 2
+      displayName: "Steps"
